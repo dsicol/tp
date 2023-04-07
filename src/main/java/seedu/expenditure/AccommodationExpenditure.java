@@ -50,7 +50,6 @@ public class AccommodationExpenditure extends Expenditure {
 
     public void handleNextRepeat(LocalDate currentDate) {
         if (currentDate.equals(repeatDate) || currentDate.isAfter(repeatDate)) {
-            System.out.println("entered if");
             isPaid = false;
             repeatDate = getRepeatDate();
         }
